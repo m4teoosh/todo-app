@@ -1,38 +1,75 @@
 .App {
+  display: flex;
+  padding: 5%;
+  justify-content: center;
+  gap: 1%;
   text-align: center;
+  background-color: rgb(30, 40, 49);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.TaskInput {
+  border-radius: 5rem;
+  border: 2px solid rgb(106, 252, 165);
+  font-size: 32px;
+  width: 60%;
+  padding-left: 10px;
+  color: aliceblue;
+  background-color:rgb(30, 40, 49);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.TaskInput:focus {
+  border: 2px solid rgb(248, 98, 253);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.AddButton {
+  padding: 4%;
+  border-radius: 50%;
+  border: 2px solid rgb(106, 252, 165);
+  color: rgb(106, 252, 165);
+  background-color:rgb(30, 40, 49);
+  font-size:20px;
+  font-weight: lighter;
+}
+
+.AddButton:hover {
+  /* nice animation */
+}
+
+.AddButton:active {
+  color: rgb(23, 58, 37);
+  border: solid 2px rgb(30, 40, 49);
+}
+
+.TasksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  padding: 2%;
+  background-color:rgb(43, 55, 65);
+
+
+}
+
+h1 {
+  color: aliceblue;
+  font-size: 38px;  
+  justify-self: center;
+  margin-right: 2%;
+}
+
+.Task {
+  padding: 2%;
+  margin-top: 1%;
+  margin-bottom: 1%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 1rem;
+  background-color:rgb(36, 45, 53);
+
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Task:hover {
+  border: 2px solid rgb(106, 252, 165);
 }
